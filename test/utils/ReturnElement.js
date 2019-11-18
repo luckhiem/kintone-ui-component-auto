@@ -1,11 +1,11 @@
 class ReturnElement {
     static singleElement(selector) {
-        browser.waitForVisible(selector, 5000);
+        browser.waitForVisible(selector, 10000);
         return browser.$(selector);
     }
 
     static listOfElements(selector) {
-        browser.waitForVisible(selector, 5000);
+        browser.waitForVisible(selector, 10000);
         return browser.$$(selector);
     }
 
