@@ -3,8 +3,8 @@ const github = require('@actions/github');
 const spawn = require('cross-spawn');
 
 try {
-    const file_tgz = core.getInput('file_tgz');
-    spawnSync('npm', ['install']);
+    // const file_tgz = core.getInput('file_tgz');
+    spawn.spawnSync('npm', ['install']);
     const payload = JSON.stringify(github.context.payload, undefined, 2)
     console.log(`The event payload: ${payload}`);
 } catch (error) {
