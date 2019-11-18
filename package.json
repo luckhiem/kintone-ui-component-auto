@@ -19,6 +19,8 @@
   "author": "SDVN",
   "license": "ISC",
   "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0",
     "babel-loader": "^8.0.6",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^6.0.3",
@@ -34,6 +36,7 @@
     "@kintone/kintone-ui-component": "git+https://github.com/kintone/kintone-ui-component.git",
     "allure-commandline": "^2.9.0",
     "chai": "^4.2.0",
+    "cross-spawn": "^7.0.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "wdio-allure-reporter": "^0.8.3",
     "wdio-mocha-framework": "^0.6.4",
