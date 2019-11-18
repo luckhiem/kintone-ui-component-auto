@@ -4,9 +4,7 @@ exports.config = {
   specs: [
 
     //Fro running test scipt
-    `./test/specs/${CONFIG.folderTest}-test/datetime.js`,
-    //For uploading files (js/css) into kintone app 
-    // './test/testScripts/common/_uploadJSFiles.js'
+    `./test/testScripts/${CONFIG.folderTest}-test/datetime.js`,
   ],
 
   suites: {
@@ -23,8 +21,12 @@ exports.config = {
   //Testing Browser Info
   capabilities: [{
     maxInstances: 5,
-    //
     browserName: 'chrome',
+    'goog:chromeOptions': {
+      // to run chrome headless the following flags are required
+      // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
+      args: ['--headless', '--disable-gpu'],
+    },
     proxy: {
       proxyType: 'autodetect'
     }

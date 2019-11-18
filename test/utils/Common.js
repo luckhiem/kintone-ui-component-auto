@@ -12,6 +12,7 @@ const fs = require('fs');
 logInSlash = () => {
     console.log('!!! TestSuite setting up !!!');
     browser.url(CONSTANT.PATH.APP_INDEX);
+    browser.windowHandleFullscreen();
     Login.submitLoginFormWithValidCred(CONFIG.credentials.username, CONFIG.credentials.password);
     browser.waitUntil(() => {
         return browser.getUrl() === CONSTANT.PATH.APP_INDEX;
