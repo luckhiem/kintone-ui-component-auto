@@ -1,0 +1,3393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="[% title %]">
+
+    <title>HTML Report</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    body {
+      background-color: #fafafa;
+      font-weight: 200;
+    }
+    h1, .h1, h2, .h2, h3, .h3 {
+      margin: 10px;
+      font-weight: 200;
+    }
+    h1, .h1 {
+      font-size: 30px;
+    }
+    h2, .h2 {
+      font-size: 24px;
+    }
+    h3, .h3 {
+      font-size: 20px;
+    }
+    table {
+      width: 100%;
+    }
+    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+      /*border-color: #ECEFF1;*/
+    }
+    .table-bordered>tbody>tr, .table-bordered>tfoot>tr {
+      background-color: white;
+    }
+    .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-color: #ECEFF1;
+    }
+
+    .step-table .step-name {
+      text-align: left;
+    }
+
+    .step-table .step-result {
+      text-align: left;
+    }
+
+    .step-table .step-line {
+      color: grey;
+      text-align: right;
+      display: inline;
+    }
+
+    .test-pass, .suite-pass {
+      background-color: #C8E6C9;
+    }
+
+    .test-fail, .suite-fail {
+      background-color: #FFCDD2;
+    }
+
+    .test-pending, .suite-pending {
+      background-color: #B3E5FC;
+    }
+
+    .test-unknown, .suite-unknown {
+      background-color: #ECEFF1;
+    }
+
+    .log-output {
+      background-color: rgba(255,192,0,0.75);
+    }
+
+    .screenshot-small {
+      height: 20%;
+      width: 20%;
+    }
+
+    .screenshot-large {
+      height: 100%;
+      width: 100%;
+    }
+
+    .table-test {
+      margin: 0px;
+    }
+
+    tr.test-row {
+      border-top: 2px solid white;
+    }
+
+    .screenshotWrapper {
+      max-width: 1024px;
+    }
+
+   .filter {
+      border: 1px solid;
+      padding: 4px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="page-header"><h1>HTML Report</h1></div>
+
+      <h2>Summary</h2>
+      <table class="table">
+        <thead>
+          <th>Key</th>
+          <th>Value</th>
+        </thead>
+
+        <tbody>
+          <tr><td>Start</td><td>Fri Feb 22 2019 08:42:07 GMT+0700 (Indochina Time)</td></tr>
+          <tr><td>End</td><td>Fri Feb 22 2019 08:42:57 GMT+0700 (Indochina Time)</td></tr>
+          <tr><td>Duration</td><td>00:00:50.50</td></tr>
+          <tr><td>Breakdown</td><td>
+            <table class="table table-bordered">
+              <tr>
+                <td class='test-pass'>Passes</td><td class='test-pending'>Pending</td><td class='test-fail'>Failures</td>
+              </tr>
+              <tr>
+                <td>213</td><td>0</td><td>0</td>
+              </tr>
+            </table>
+          </td></tr>
+        </tbody>
+      </table>
+
+      <table class="table table-bordered">
+        <tr>
+          <td>
+            <span class="filter toggleFailingTests"><span>Hide</span> Failing Tests</span>
+            <span class="filter togglePassingTests"><span>Hide</span> Passing Tests</span>
+<!--
+            <span class="filter">Show/Hide Tests with screenshots</span>
+            <span class="filter">Show/Hide Tests with output</span>
+ -->
+          </td>
+        </tr>
+      </table>
+
+
+      <h2>Results</h2>
+
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-1:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:08 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:24 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:16.27</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\checkbox-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:10 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:23 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:13.09</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-2] Verify that the MultipleChoice have the  UI is the same as MultipleChoice on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:15 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-4] Verify that can create a CheckBox without any options value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-5]Verify that can create a CheckBox with full  options value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-6]Verify that can create a CheckBox with full  options value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-23-40] Verify that can add an item to the CheckBox list with full value for item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-41] Verify that the new added item is disabled if the item.isDisable is true</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-42] Verify that can remove an item at the first position</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-49-51] Verify that can get value of the visible item at the first position</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[CheckBox-57-58-59] Verify the return list have the same value of item with the CheckBox list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-62-63] Verify that the return value is the same with the current selected value in checkbox</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-67] Verify can set the selected value for CheckBox by valid value of an disable item in CheckBox</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-68] Verify can set the selected value for CheckBox by valid value of an invisible item in CheckBox</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-70] Verify can set disabled for existing enable item by the valid value of an item in CheckBox</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-72] Verify can set disabled for existing enable item by the valid value for invisible CheckBox</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-76] Verify can set enable for existing enable item by the valid value of an item in CheckBoxx</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-80] Verify that can show invisible CheckBox on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-82] Verify that can hide the visible CheckBox on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-83] Verify that can hide the invisible CheckBox on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-84] Verify that can disable the current enable CheckBox on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:22 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-86] Verify that can enable the disabled CheckBox on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:22 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Checkbox-88-89] Verify that the callback function will be trigger when the checked state has been changed</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:22 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-2:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:08 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:30 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:22.46</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\dropdown-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:10 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:30 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:19.39</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-2] Verify that the Dropdown have the  UI is the same as Dropdown on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:16 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-3-23] Dropdown contains items ( disable items, invisible item, enable item, visible items)</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-4] Dropdown does not contains any items in the list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-6-7-8] Verify when user does not interact</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-10-11] Verify when user clicks on the main area</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-13-14] Verify When user choose any items in the list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-15] Verify user cannot choose the disabled item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-17-18] Verify when user click out of the dropdown</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-19] Verify The main are will displayed blank in case does not have any selected value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-22] Verify that can create a Dropdown without any options value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:23 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-33-34-35] Verify can create a dropdown with default selected value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:24 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-42-54] Verify that can add an item to the dropdown list with full value for item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:24 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-43-44-55] Verify that can add an item to the dropdown list with full value for item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:24 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-53-56] Verify that the new added item is disabled if the item.isDisable is true</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:24 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-57] Verify that can remove an item at the first position</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:25 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-62] Verify that cannot remove item with the dropdown list not contains any item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:25 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-64-65-66] Verify the return list have the same value of item with the current dropdown list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:25 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-67] Verify that can get all the items for invisible dropdow</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:26 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-69-70-71] Verify that can get all the items for invisible dropdow</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:26 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-73] Verify that can get the value of the selected item while dropdown is invisible</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:26 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-74-75] Verify can set the selected value for Dropdown by valid value of an item in dropdown</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:26 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-76] Verify can set the selected value to the &quot;blank&quot; value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:26 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-79] Verify can set disabled for existing enable item by the valid value of an item in dropdown</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:27 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-80] Verify can set disabled for existing disable item by the valid value of an item in dropdown</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:27 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-84] Verify can set disabled for existing enable item by the valid value of an item in dropdown</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:28 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-85] Verify can set disabled for existing enable item by the valid value of an item in dropdown</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:28 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-90] Verify that can show invisible Dropdown on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:28 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-92] Verify that can hide the visible Dropdown on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:28 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-94] Verify that can disable the current enable Dropdown on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:28 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-96] Verify that can disable the current enable Dropdown on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:29 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Dropdown-98-99] Verify that the callback function will be trigger when change the value for dropdown</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:29 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-3:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:08 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:24 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:15.81</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\icon-button-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:10 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:23 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:12.85</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-11] Verify that the IconButton have the UI is the same as spec</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-12-14] Verify that the Icon Button object contains the the below attibutes</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-15] Verify that can create a Icon Button only with options.type with option.type&#x3D; insert</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-23] Verify that can create a Icon Button only with options.color&#x3D; green</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-24] Verify that can create a Icon Button with only option.isDisabled is true</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-29] Verify that can set type insert</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-30] Verify that can set type remove</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-31] Verify that can set type close</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-32] Verify that can set the type for invisible IconButton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-35] Verify can set the normal (large) size for the IconButton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-36] Verify can set the small size for the IconButton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-42] Verify that can show visible IconButton on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-44] Verify that can hide the invisible IconButton on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-45] Verify that can disable the current enable IconButton on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-47] Verify that can enable the disabled IconButton on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Icon-Button-49-50] Verify that the callback function will be trigger when clicking on the icon button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-0:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:08 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:12.86</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\alert-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:10 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:09.58</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-2] Verify that the Error Alert have the UI is the same as Alert on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:15 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-3] Verify that the Error Alert have the UI is the same as Alert on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-6] Verify that can create a Alert with full options value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-17] Verify can set text for Alert which contains existing text</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-22] Verify can set error type for Alert</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-23] Verify can set success type for Alert</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-27] Verify that can show the invisible alert on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-29] Verify that can hide the visible Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-31] Verify that can disable the disabled Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-33] Verify that can enable the disabled Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Alert-35] Verify that can register a callback function for click event successfully</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-4:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:08 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:21 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:12.87</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\label-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:10 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:20 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:09.58</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-2] Verify that the Label and Required Label have the UI is the same as on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:16 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-3-5] Verify that can create a text box with full options value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-16] Verify can set text for label which contains existing text</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-22] Verify can set the required icon for label with require is true</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:17 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-23] Verity can hidden the required icon for exisiting required label when using setRequired(false)</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-24] Verify can set the required label when using setRequired(true) for the existing required label</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-28] Verify that can show invisible Label on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-30] Verify that can show invisible Label on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:18 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-32] Verify that can disable the current enable Text on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-34] Verify that can disable the current disable Text on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Label-36-37] Verify that the callback function will be trigger when click on the label</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:19 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-5:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:22 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:39 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:17.02</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\multiple-choice-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:24 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:38 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:14.30</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-2] Verify that the MultipleChoice have the  UI is the same as MultipleChoice on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:31 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-5] Verify that can create a MultipleChoice without any options value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:31 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-6] Verify that can create a MultipleChoice with full options default value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-16] Verify that can create a MultipleChoice with full options default value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-22] Verify that can add an item to the MultipleChoice list with full value for item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-23-24] Verify that can add an item to the MultipleChoice with only item.value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-31] Verify that can add an item to the MultipleChoice without item.value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-40] Verify that can remove an item at the last position</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-41] Verify that can remove an item at the first position for invisible MultipleChoice list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-46-48] Verify that can get value item at the specific position in multiple choices list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-47-49] Verify that can get value item at the specific position in multiple choices list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-52-53-54] Verify the return list have the same number of item with the MultipleChoice list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-59] Verify that can get the value of the checked item for invisible Multiple Choice</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-60] Verify can set the selected value for MultipleChoice by valid value of an item in MultipleChoice</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-64] Verify can set disabled for existing enable item by the valid value of an item in MultipleChoice</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-69] Verify can set enable for existing disable item by the valid value of an item in MultipleChoice</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-71] Verify can set enable for existing disable item by the valid value for invisible MultipleChoice</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-75] Verify that can show invisible MultipleChoice on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-77] Verify that can hide the visible MultipleChoice on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-79] Verify that can disable the current enable MultipleChoice on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:37 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-81] Verify that can enable the disabled MultipleChoice on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:37 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[MultipleChoice-83-84] Verify that can register a callback function for change event successfully</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:37 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-6:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:22 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:12.91</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\normal-button-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:24 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:10.14</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-2] Normal button should has white for background color and blue for text color</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:31 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-6] Verify that can create a button with full options value contains default value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:31 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-16] Verify can set text for button which contains existing text</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:31 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-20] Verify can set normal type for button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-21] Verify can set submit type for button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-25] Verify that can show invisible Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-27] Verify that can hide the visible Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:32 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-29] Verify that can disable the current enable Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-31] Verify that can enable the disabled Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-33] Verify that can register a callback function for click event successfully</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Normal button-34] Verify that the callback function will be trigger when click on the button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-7:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:25 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:43 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:18.93</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\notify-popup-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:27 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:43 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:16.15</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-2] Verify that the Success NotifyPopup have the  UI is the same as NotifyPopup on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-3] Verify that the Error NotifyPopup have the UI is the same as NotifyPopup on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-5] Verify that when user click on the close icon, the popup will disappear</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-6-16] Verify that the Error NotifyPopup have the UI is the same as NotifyPopup on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-17] Verify can set text for NotifyPopup which not contains existing text</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-22] Verify that can set text for invisible NotifyPopup</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-23] Verify that can set the current text to blank</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:37 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-25-32] Verify can set error type for NotifyPopup</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:37 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-34] Verify that can hide the visible NotifyPopup on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:38 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-36] Verify that can disable the current enable NotifyPopup on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:38 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-38] Verify that can enable the disabled NotifyPopup on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:39 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-39] Verify that can enable the enable NotifyPopup on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:40 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Notify-40-41] Verify that the callback function will be triggered when clicking on that NotifyPopup</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:41 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-8:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:25 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:38 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:13.14</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\radio-button-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:27 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:37 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:09.96</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-2] Verify that the Radio Button have the  UI is the same as Radio Button on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-6] Verify that can create a Radio Button with full options default value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-24-30] Verify that can add an item to the Radio Button list with full value for item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-37] Verify that can remove an item to the Radio Button list with full value for item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-46-47] Verify the return list have the same value of item with the Radio Button list</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-49] Verify that can get the value of the selected item</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:34 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-52] Verify can get the value of the selected item for invisible radio button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-54] Verify can set the selected value for radiobutton by valid value of an item in radiobutton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-58] Verify can set disabled for existing enable item by the valid value of an item in radiobutton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-59] Verify can set disabled for existing disable item by the valid value of an item in radiobutton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-60] Verify can set disabled for existing enable item by the valid value for invisible radiobutton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-63] Verify can set enable for existing disable item by the valid value of an item in radiobutton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-64] Verify can set enabled for existing enable item by the valid value of an item in radiobutton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:35 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-69] Verify that can show invisible radiobutton on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-71] Verify that can hide the visible radiobutton on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-73] Verify that can disable the current enable radiobutton on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-75] Verify that can enable the disabled radiobutton on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[RadioButton-77-78] Verify that the callback function will be trigger when change the value for radiobutton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-9:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:31 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:41 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:10.29</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\spinner-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:33 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:41 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:07.62</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Spinner-3] Verify that the Spinner have the UI is the same as spec</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:39 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Spinner-4] Verify that can create a Spinner successfully without any parameters</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:39 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Spinner-6] Verify that can show invisible Spinner on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:40 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Spinner-8] Verify that can hide the visible Spinner on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:40 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-10:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:36 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:46 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:10.08</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\submit-button-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:38 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:45 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:07.40</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-3] Verify that the Submit button have the UI is the same as button on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:43 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-6] Verify that can create a button with full options value contains default value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:43 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-16] Verify can set text for button which contains existing text</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:43 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-20] Verify can set normal type for button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:44 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-21] Verify can set submit type for button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:44 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-25] Verify that can show invisible Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:44 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-27] Verify that can hide the visible Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:44 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-29] Verify that can disable the current enable Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:44 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-31] Verify that can enable the disabled Button on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:44 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-33] Verify that can register a callback function for click event successfully</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:44 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Submit button-34] Verify that the callback function will be trigger when click on the button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:44 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-11:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:39 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:57 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:18.39</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\table-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:42 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:57 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:15.44</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-2] Verify that the Table have the  UI is the same as Table on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:47 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-3] Verify that the default table will contain the header and sample row</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:48 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-5] Verify that the sample row is added below the row contains clicked button when click on the insert button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:48 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-6] Verify that the sample row which contains all component is added below the row contains clicked button when click on the insert button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:48 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-22] Verify that the operation for all below child components in table are working as normally - Text</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:48 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-23] Verify that the operation for all below child components in table are working as normally - Dropdown</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:48 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-24] Verify that the operation for all below child components in table are working as normally - CheckBox</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-25] Verify that the operation for all below child components in table are working as normally - Multiple choice</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-26] Verify that the operation for all below child components in table are working as normally - Radio Button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-27] Verify that the operation for all below child components in table are working as normally - Button</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-28] Verify that the operation for all below child components in table are working as normally - Label</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-29] Verify that the operation for all below child components in table are working as normally - IconButton</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-30] Verify that the operation for all below child components in table are working as normally - Alert</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-31] Verify that can add 2 tables into 1 form</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-33] Verify that the Table object contains the the below attibutes</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-41] Verify that can get value of all rows in the table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:53 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-50] Verify that can get value of all rows in the table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:54 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-51] Verify that can get value of all rows in the table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:54 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-52] Verify that can get value of all rows in the table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:54 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-53] Verify that can get value of all rows in the table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:54 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-54] Verify that can get value of all rows in the table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:54 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-55] Verify that can set value for multiple rows in table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:54 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-59] Verify that can show invisible Table on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:55 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-61] Verify that can hide the visible Table on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:55 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-63] Verify that the callback function will be triggered after adding a new row to table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:55 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-64] Verify that the callback function will be triggered after removing row from table</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:55 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-65-Radio] Verify that the callback function will be triggered when changing the value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:55 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-65-Dropdown] Verify that the callback function will be triggered when changing the value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:55 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-65-Textbox] Verify that the callback function will be triggered when changing the value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:55 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-65-Checkbox] Verify that the callback function will be triggered when changing the value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:56 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-65-Multiple] Verify that the callback function will be triggered when changing the value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:56 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-66-Button] Verify that the callback function will be triggered when clicking on these elements</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:56 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-66-Icon] Verify that the callback function will be triggered when clicking on these elements</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:56 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-66-Label] Verify that the callback function will be triggered when clicking on these elements</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:56 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Table-66-Alert] Verify that the callback function will be triggered when clicking on these elements</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:56 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+
+                    <h3>0-12:</h3>
+                     <table class="table table-bordered">
+<!--
+                      <tr><td>Spec Start</td><td>Fri Feb 22 2019 08:42:40 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec End</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr>
+                      <tr><td>Spec Duration</td><td>00:00:09.57</td></tr>
+ -->
+                      <tr><td>Spec Files</td><td>D:\webdriverio-source\test\kintone-UI-Component-Auto-test\test\specs\react-test\text-react.js</td></tr>
+
+                            <table class="table table-bordered table-suite">
+                              <tr class="suite-header">
+                                <td colspan="2" class="suite-pass">
+                                  <h3>
+                                    <span style="margin: 2px; padding: 1px">&nbsp;</span>kintoneUIComponent - Button
+                                  </h3>
+                                </td>
+                              </tr>
+
+                                <tr><td>Suite Start</td><td>Fri Feb 22 2019 08:42:42 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite End</td><td>Fri Feb 22 2019 08:42:49 GMT+0700 (Indochina Time)</td></tr>
+                                <tr><td>Suite Duration</td><td>00:00:06.78</td></tr>
+
+
+                                <tr><td colspan="2"><h4>Tests:</h4></td></tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <table>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-2] Verify that the Textbox have the UI is the same as Textbox on kintone</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:47 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-4-6] Verify that can create a text box with full options value</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:47 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-14] Verify can set text for text box which contains existing text</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:47 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-25] Verify that can show invisible Textbox on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:47 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-27] Verify that can hide the visible Textbox on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:47 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-29] Verify that can disable the current enable Text on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:47 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-31] Verify that can disable the current enable Text on UI</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:48 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-33-34] Verify that the callback function will be trigger when change the value for text component</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:48 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                        <tr><td>
+                                          <table class="table table-test">
+                                            <tr><td colspan="2" class="test-pass">[Text-35-36] Verify that the callback function will be trigger when click on the textbox</td></tr>
+                                            <!-- <tr><td>Test Start</td><td>Fri Feb 22 2019 08:42:48 GMT+0700 (Indochina Time)</td></tr> -->
+
+
+
+                                            <tr class="test-row">
+                                            </tr>
+
+                                          </table>
+                                        </td><tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                            </table>
+
+   <!--                        </table>
+                        </td> -->
+                      </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+    </div>
+
+    <script type="text/javascript">
+      // increase/decrease size of screenshot
+      $('.screenshot').click(function(){
+        $(this).toggleClass('screenshot-large screenshot-small');
+      });
+
+      $.each($('.suite-header'), function(){
+        if(!$(this).children().hasClass("suite-unknown")) {
+          // $(this).find('span').text(function(_, value){return value=='-'?'+':'-'});
+          // $(this).find('span').toggleClass(function(_, value){return value=='glyphicon glyphicon-chevron-down'?'glyphicon glyphicon-chevron-up':'glyphicon glyphicon-chevron-down'});
+          $(this).find('span').addClass('glyphicon glyphicon-chevron-down');
+
+          $(this).nextUntil('.suite-header').slideToggle(100, function(){
+          });
+        }
+      });
+
+      //hide the suites/scenarios
+      $('.suite-header').click(function(){
+        if(!$(this).children().hasClass("suite-unknown")) {
+          // $(this).find('span').text(function(_, value){return value=='-'?'+':'-'});
+          $(this).find('span').toggleClass('glyphicon glyphicon-chevron-down', 'glyphicon glyphicon-chevron-up', true);
+          $(this).find('span').toggleClass('glyphicon glyphicon-chevron-up', 'glyphicon glyphicon-chevron-down', true);
+          $(this).nextUntil('.suite-header').slideToggle(100, function(){
+          });
+        }
+      });
+
+      $('.toggleFailingTests').click(function() {
+        $.each($('.suite-fail'), function() {
+          if ($(this).parent().find('span').hasClass('glyphicon-chevron-up')) {
+          $(this).parent().find('span').toggleClass('glyphicon glyphicon-chevron-down', 'glyphicon glyphicon-chevron-up', true);
+          $(this).parent().find('span').toggleClass('glyphicon glyphicon-chevron-up', 'glyphicon glyphicon-chevron-down', true);
+            $(this).parent().nextUntil('.suite-header').slideUp();
+          }
+          $(this).slideToggle();
+        })
+        $(this).find('span').text(function(_, value){return value=='Show'?'Hide':'Show'});
+      });
+
+      $('.togglePassingTests').click(function() {
+        $.each($('.suite-pass'), function() {
+          if ($(this).parent().find('span').hasClass('glyphicon-chevron-up')) {
+            $(this).parent().find('span').toggleClass('glyphicon glyphicon-chevron-down', 'glyphicon glyphicon-chevron-up', true);
+            $(this).parent().find('span').toggleClass('glyphicon glyphicon-chevron-up', 'glyphicon glyphicon-chevron-down', true);
+              $(this).parent().nextUntil('.suite-header').slideUp();
+          }
+          $(this).slideToggle();
+        })
+        $(this).find('span').text(function(_, value){return value=='Show'?'Hide':'Show'});
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "domain": "khiem-training-1.cybozu-dev.com",
+    "appId": 481,
+    "credentials": {
+        "username": "cybozu",
+        "password": "cybozu"
+    },
+	"folderTest": "js"
+}
