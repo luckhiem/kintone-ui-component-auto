@@ -1,0 +1,32 @@
+name: fuctionsTest
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: install chrome
+      run: |
+        sudo apt-get update 
+        sudo apt-get install google-chrome-stable 
+    - name: install packages
+      run: |
+        npm install
+    - name: preparation
+      run: |
+        npm run preparation
+    - name: execute test
+      run: |
+        npm run test
+      env:
+        CI: true
